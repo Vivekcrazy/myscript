@@ -165,9 +165,6 @@ public class CalrikTestNG
 		driver.findElement(By.xpath("//span[@title='Congo']")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//div[@class='ant-select-item-option-content'][normalize-space()='Chad']")).click();
-		//driver.findElement(By.xpath("//a[@class='primary']")).click();
-		//driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\Users\\vragh\\Downloads\\Calrikpic.jpg");
-        //driver.findElement(By.xpath("//span[normalize-space()='Save Profile Image']")).click();
 		WebElement input = driver.findElement(By.xpath("//input[@id='fullname']"));
 		input.clear();
 		driver.findElement(By.xpath("//input[@id='fullname']")).sendKeys("John");
@@ -250,10 +247,6 @@ public class CalrikTestNG
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("//a[@aria-label='February 4, 2025']//input[@type='checkbox']")).click();
 		driver.findElement(By.xpath("//span[normalize-space()='Create Poll']")).click();
-		Thread.sleep(3000);
-		//driver.findElement(By.xpath("//div[@class='ant-notification-notice-description']")).isDisplayed();
-		//String successMessage = driver.findElement(By.xpath("//div[@class='ant-notification-notice-description']")).getText();
-		//System.out.println("Poll "+successMessage);
 	}
 	@Test (priority=5)
 	public void createGroupEvent() throws InterruptedException
