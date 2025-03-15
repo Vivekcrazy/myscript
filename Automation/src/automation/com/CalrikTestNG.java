@@ -27,7 +27,7 @@ public class CalrikTestNG
 	{
 		driver.findElement(By.xpath("//div[@class='ant-notification-notice-description']")).isDisplayed();
 		String welcomeMessage = driver.findElement(By.xpath("//div[@class='ant-notification-notice-description']")).getText();
-		System.out.println("Login successfull ---->>> "+welcomeMessage);
+		System.out.println("Login successfull : "+welcomeMessage);
 	}
 	@Test(priority=2)
 	public void createAvailability() throws InterruptedException
